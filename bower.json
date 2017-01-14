@@ -1,0 +1,20 @@
+{
+  "name": "restsecinc",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Clinton D'souza <clinton_dsouza92@yahoo.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
