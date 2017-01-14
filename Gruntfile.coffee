@@ -1,10 +1,10 @@
 module.exports = (grunt) ->
   sassLoc = './sass'
   coffeeLoc = './coffee'
-  #  cssLoc = '.css'
+  cssLoc = './css'
   jsLoc = './js'
-  jsFinal = './js'
-  cssFinal = './css'
+  jsFinal = './dist/js'
+  cssFinal = './dist/css'
   sass_require = ['bourbon']
   # ===========================================================================
   # CONFIGURE GRUNT ===========================================================
@@ -56,7 +56,7 @@ module.exports = (grunt) ->
       compile:
         options:
           sassDir: sassLoc
-          cssDir: cssFinal
+          cssDir: cssLoc
           imagesDir: './assets'
           environment: 'development'
           outputStyle: 'expanded'
@@ -67,7 +67,7 @@ module.exports = (grunt) ->
       build:
         files: [{
           expand: true
-          cwd: jsFinal
+          cwd: jsLoc
           src: ['main.js']
           dest: jsFinal
           ext: '.min.js'
@@ -76,7 +76,7 @@ module.exports = (grunt) ->
       build:
         files: [{
           expand: true,
-          cwd: cssFinal,
+          cwd: cssLoc,
           src: ['style.css'],
           dest: cssFinal,
           ext: '.min.css'
@@ -90,6 +90,18 @@ module.exports = (grunt) ->
         files:
           './index.html': './index.pug'
           './404.html': './404.pug'
+    htmlmin:
+      build:
+        options:
+          removeComments: true,
+          collapseWhitespace: true,
+          conservativeCollapse: true
+        files: [
+          {
+            'dist/index.html': './index.html',
+            'dist/404.html': './404.html'
+          }]
+
 
 
 
@@ -105,5 +117,6 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks 'grunt-contrib-compass'
   grunt.loadNpmTasks 'grunt-contrib-watch'
   grunt.loadNpmTasks 'grunt-contrib-pug'
+  grunt.loadNpmTasks 'grunt-contrib-htmlmin'
   grunt.registerTask 'default', ['watch']
-  grunt.registerTask 'wrap', ['uglify', 'cssmin']
+  grunt.registerTask 'wrap', ['uglify', 'cssmin','htmlmin']
