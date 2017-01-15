@@ -16,5 +16,8 @@
   ],
   "dependencies": {
     "bootstrap": "^3.3.7"
+  },
+  "devDependencies": {
+    "Andy": "andy#^1.0.4"
   }
 }
