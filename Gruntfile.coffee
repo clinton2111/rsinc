@@ -41,7 +41,7 @@ module.exports = (grunt) ->
           src: [
             jsLoc + '/**/*.js'
           ]
-          dest: jsFinal + '/main.js'
+          dest: jsLoc + '/main.js'
         }]
     coffee:
       compile:
@@ -101,6 +101,12 @@ module.exports = (grunt) ->
             'dist/index.html': './index.html',
             'dist/404.html': './404.html'
           }]
+    copy:
+      main:
+        files: [
+          {expand: true, src: ['./assets/**','./package.json','./bower.json'], dest: 'dist/'}
+        ]
+
 
 
 
@@ -118,5 +124,6 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks 'grunt-contrib-watch'
   grunt.loadNpmTasks 'grunt-contrib-pug'
   grunt.loadNpmTasks 'grunt-contrib-htmlmin'
+  grunt.loadNpmTasks 'grunt-contrib-copy'
   grunt.registerTask 'default', ['watch']
-  grunt.registerTask 'wrap', ['uglify', 'cssmin','htmlmin']
+  grunt.registerTask 'wrap', ['uglify', 'cssmin','htmlmin','copy']
