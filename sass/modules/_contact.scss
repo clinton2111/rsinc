@@ -1,0 +1,28 @@
+#contact{
+  @include padding-setter();
+  .container{
+    form{
+      padding-top: 75px;
+      .form-control{
+        height: 50px;
+        background-color: #f6f6f6;
+        border-radius: 0px;
+        @include fontsize(14px);
+        text-transform: uppercase;
+      }
+      .custom-height{
+        height: auto;
+      }
+      button{
+        background-color: $gold;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        @include fontsize(14px);
+        padding: 20px;
+        border-radius: 0px;
+        margin-top: 75px;
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+#facts {
+  @include padding-setter();
+  background-color: $black;
+  .container {
+    .facts{
+      padding-top: 75px;
+      color: white;
+      .fa,.number{
+        color: white;
+        @include fontsize(56px);
+      }
+      .number{
+        font-weight: bold;
+      }
+      .text{
+        text-transform: uppercase;
+        color: $gold;
+        @include fontsize(16px);
+      }
+      hr{
+        width:50%
+      }
+      @media (max-width: $screen-sm-max){
+        text-align: center;
+      }
+    }
+  }
+
+}

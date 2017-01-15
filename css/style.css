@@ -632,3 +632,138 @@ main #landing .move-to-bottom .fa {
 #testimonials .container .clients .client {
   display: inline-block;
 }
+
+/* line 1, ../sass/modules/_facts.scss */
+#facts {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #2c2b2a;
+}
+/* line 5, ../sass/modules/_facts.scss */
+#facts .container .facts {
+  padding-top: 75px;
+  color: white;
+}
+/* line 8, ../sass/modules/_facts.scss */
+#facts .container .facts .fa, #facts .container .facts .number {
+  color: white;
+  font-size: 56px;
+  font-size: 3.5em;
+}
+/* line 12, ../sass/modules/_facts.scss */
+#facts .container .facts .number {
+  font-weight: bold;
+}
+/* line 15, ../sass/modules/_facts.scss */
+#facts .container .facts .text {
+  text-transform: uppercase;
+  color: #c59a6d;
+  font-size: 16px;
+  font-size: 1em;
+}
+/* line 20, ../sass/modules/_facts.scss */
+#facts .container .facts hr {
+  width: 50%;
+}
+@media (max-width: 991px) {
+  /* line 5, ../sass/modules/_facts.scss */
+  #facts .container .facts {
+    text-align: center;
+  }
+}
+
+/* line 1, ../sass/modules/_contact.scss */
+#contact {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+/* line 4, ../sass/modules/_contact.scss */
+#contact .container form {
+  padding-top: 75px;
+}
+/* line 6, ../sass/modules/_contact.scss */
+#contact .container form .form-control {
+  height: 50px;
+  background-color: #f6f6f6;
+  border-radius: 0px;
+  font-size: 14px;
+  font-size: 0.875em;
+  text-transform: uppercase;
+}
+/* line 13, ../sass/modules/_contact.scss */
+#contact .container form .custom-height {
+  height: auto;
+}
+/* line 16, ../sass/modules/_contact.scss */
+#contact .container form button {
+  background-color: #c59a6d;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  font-size: 0.875em;
+  padding: 20px;
+  border-radius: 0px;
+  margin-top: 75px;
+}
+
+/* line 1, ../sass/modules/_findus.scss */
+#findus {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #2c2b2a;
+}
+/* line 5, ../sass/modules/_findus.scss */
+#findus .container .facts {
+  padding-top: 75px;
+  color: white;
+}
+/* line 8, ../sass/modules/_findus.scss */
+#findus .container .facts .fa {
+  color: white;
+  font-size: 56px;
+  font-size: 3.5em;
+}
+/* line 12, ../sass/modules/_findus.scss */
+#findus .container .facts .contact-text {
+  font-weight: bold;
+  color: #c59a6d;
+  font-size: 18px;
+  font-size: 1.125em;
+}
+/* line 17, ../sass/modules/_findus.scss */
+#findus .container .facts .contact-detail {
+  padding-top: 30px;
+  text-transform: uppercase;
+  color: white;
+  font-size: 16px;
+  font-size: 1em;
+}
+/* line 23, ../sass/modules/_findus.scss */
+#findus .container .facts hr {
+  width: 50%;
+}
+@media (max-width: 991px) {
+  /* line 5, ../sass/modules/_findus.scss */
+  #findus .container .facts {
+    text-align: center;
+  }
+}
+
+/* line 1, ../sass/modules/_footer.scss */
+footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+/* line 5, ../sass/modules/_footer.scss */
+footer .container .social-icons i {
+  margin-right: 15px;
+}
+/* line 8, ../sass/modules/_footer.scss */
+footer .container .social-icons i:hover, footer .container .social-icons i:focus {
+  color: #c59a6d;
+}
+/* line 12, ../sass/modules/_footer.scss */
+footer .container .social-icons i:last-of-type {
+  margin-right: 0px;
+}

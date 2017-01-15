@@ -1,0 +1,32 @@
+#findus {
+  @include padding-setter();
+  background-color: $black;
+  .container {
+    .facts{
+      padding-top: 75px;
+      color: white;
+      .fa{
+        color: white;
+        @include fontsize(56px);
+      }
+      .contact-text{
+        font-weight: bold;
+        color: $gold;
+        @include fontsize(18px);
+      }
+      .contact-detail{
+        padding-top: 30px;
+        text-transform: uppercase;
+        color:white;
+        @include fontsize(16px);
+      }
+      hr{
+        width:50%
+      }
+      @media (max-width: $screen-sm-max){
+        text-align: center;
+      }
+    }
+  }
+
+}

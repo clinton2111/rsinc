@@ -1,0 +1,17 @@
+footer{
+  @include padding(50px null);
+  .container{
+    .social-icons{
+      i{
+        margin-right: 15px;
+
+        &:hover,&:focus{
+          color: $gold;
+        }
+      }
+      i:last-of-type{
+        margin-right: 0px;
+      }
+    }
+  }
+}

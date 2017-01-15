@@ -1,5 +1,5 @@
 #about {
-  @include padding(100px null);
+  @include padding-setter();
   .container {
     hr {
       @include margin(100px null);
