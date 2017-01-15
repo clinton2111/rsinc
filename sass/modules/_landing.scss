@@ -1,0 +1,42 @@
+main {
+  #landing {
+    @include position(relative,null,null,null,null);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    @include display(flex);
+    @include align-items(center);
+    @include justify-content(center);
+    .landing-text {
+      text-align: center;
+      h1 {
+        @include fontsize(128px);
+        font-family: 'Bebas Neue', sans-serif;
+        text-transform: uppercase;
+        color: white;
+      }
+      p{
+        color: white;
+        text-transform: capitalize;
+      }
+      hr{
+        width: 35%;
+        border-color: $gold;
+        border-width: 3px;
+      }
+    }
+    .move-to-bottom{
+      &:hover,&:focus{
+        @include css-annimation(bounce,1s)
+      }
+      @include position(absolute,null,null,20px,null);
+      .fa{
+        color: $gold;
+        border: white;
+        border-width: 1px;
+        border-style: solid;
+        @include padding(10px);
+      }
+    }
+  }
+}

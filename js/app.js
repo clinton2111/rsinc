@@ -1,4 +1,4 @@
 (function() {
-  console.log('From app.JS');
+  $(function() {});
 
 }).call(this);

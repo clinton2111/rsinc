@@ -1,0 +1,38 @@
+/* FONT SIZE */
+
+// usage example: @include fontsize(16px);
+//            or: @include fontsize(16);
+
+@mixin fontsize($size) {
+  $base-font-size: 16px !default;
+  @if (unitless($size)){
+    $size: $size * 1px;
+  }
+  font-size: $size;
+  font-size: ($size / $base-font-size) * 1rem;
+}
+
+@mixin css-annimation($animation,$time){
+  -webkit-animation: $animation $time;
+  animation: $animation $time;
+}
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  filter: alpha(opacity=($opacity * 100));
+}
+
+@mixin position($type,$top,$right,$bottom,$left) {
+  position: $type;
+  left: $left;
+  right: $right;
+  top: $top;
+  bottom: $bottom;
+}
+@function black($opacity) {
+  @return rgba(0,0,0,$opacity);
+}
+
+@function white($opacity) {
+  @return rgba(255, 255, 255, $opacity);
+}

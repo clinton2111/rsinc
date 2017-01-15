@@ -15,9 +15,7 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "^3.3.7"
-  },
-  "devDependencies": {
-    "Andy": "andy#^1.0.4"
+    "bootstrap": "^3.3.7",
+    "components-font-awesome": "^4.7.0"
   }
 }

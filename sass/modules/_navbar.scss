@@ -1,0 +1,38 @@
+header {
+  .navbar-default {
+    background-color: $black;
+    border-color: transparent;
+    margin-bottom: 0px;
+    .navbar-brand {
+      @include padding(10px null);
+
+    }
+    .navbar-nav {
+      li {
+        a {
+          color: #ffffff;
+          text-transform: uppercase;
+          font-family: 'Open Sans', sans-serif;
+          font-weight: bold;
+          @include fontsize(14px);
+
+          &:hover, &:focus {
+            color: $gold;
+          }
+        }
+
+      }
+      .active {
+        a, a:hover, a:focus {
+          color: $gold;
+          background-color: transparent;
+          border-color: white;
+          border-width: 1px;
+          border-style: solid;
+          @include margin(13px null);
+          @include padding(2px null);
+        }
+      }
+    }
+  }
+}
