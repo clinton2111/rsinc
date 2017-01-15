@@ -320,6 +320,20 @@ html(class="no-js" lang="")
 
 
 
+
+            section#video-div
+
+                #video-container
+                    video.fillWidth(autoplay='', loop='')
+                        source(src='assets/video/video.mp4', type='video/mp4')
+
+                        |  Your browser does not support the video tag. I suggest you upgrade your browser.
+                .content
+                    .text-center
+                        h1.heading Catchy Sentence
+                        hr
+                        h1.heading With Video Background
+
         script(src="bower_components/jquery/dist/jquery.min.js")
         script(src="bower_components/bootstrap/dist/js/bootstrap.min.js")
         script(src="bower_components/bxslider-4/dist/jquery.bxslider.js")
