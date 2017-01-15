@@ -16,6 +16,10 @@
           border-color: #777777;
           border-style: solid;
           padding: 30px;
+
+          @media (max-width: $screen-sm-max) {
+            margin-top: 30px;
+          }
         }
         .service-name {
           color: $gold;

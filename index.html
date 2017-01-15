@@ -11,10 +11,11 @@
     <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="bower_components/bxslider-4/dist/jquery.bxslider.css">
+    <link rel="stylesheet" href="bower_components/jquery-timelineMe/src/jquery.timelineMe.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/modernizr.js"></script>
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#navbar-id">
     <!--
     [if lt IE 8]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -59,6 +60,7 @@
             <h1 class="heading">About Us</h1>
             <p class="subtext">Duis vitae velit mollis, congue nisi dignissim, pellentesque lorem</p>
           </div>
+          <div id="timeline-container-basic" type="text"></div>
           <hr>
           <div class="text-center">
             <h1 class="heading">And the team</h1>
@@ -444,6 +446,7 @@
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="bower_components/bxslider-4/dist/jquery.bxslider.js"></script>
+    <script src="bower_components/jquery-timelineMe/src/jquery.timelineMe.js"></script>
     <script src="js/app.js"></script>
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID.-->
     <script> window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date; ga('create','UA-XXXXX-Y','auto');ga('send','pageview')</script>

@@ -12,9 +12,10 @@ html(class="no-js" lang="")
         link(rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.min.css")
         link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css")
         link(rel="stylesheet" href="bower_components/bxslider-4/dist/jquery.bxslider.css")
+        link(rel="stylesheet" href="bower_components/jquery-timelineMe/src/jquery.timelineMe.css")
         link(rel="stylesheet" href="css/style.css")
         script(src="js/modernizr.js")
-    body
+    body(data-spy="scroll" data-target="#navbar-id")
         //
             [if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -53,8 +54,6 @@ html(class="no-js" lang="")
                                 a(href='#') Contact
 
 
-
-
         main
             section#landing(style="background:url(http://placehold.it/1920x1080/272624/2c2b2a) no-repeat center center")
                 .landing-text
@@ -75,6 +74,7 @@ html(class="no-js" lang="")
                         h1.heading About Us
                         p.subtext Duis vitae velit mollis, congue nisi dignissim, pellentesque lorem
 
+                    #timeline-container-basic(type="text")
                     hr
 
                     .text-center
@@ -514,6 +514,7 @@ html(class="no-js" lang="")
         script(src="bower_components/jquery/dist/jquery.js")
         script(src="bower_components/bootstrap/dist/js/bootstrap.min.js")
         script(src="bower_components/bxslider-4/dist/jquery.bxslider.js")
+        script(src="bower_components/jquery-timelineMe/src/jquery.timelineMe.js")
         script(src="js/app.js")
 
 
