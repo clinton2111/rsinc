@@ -1,15 +1,13 @@
-/* FONT SIZE */
-
-// usage example: @include fontsize(16px);
-//            or: @include fontsize(16);
-
+@mixin padding-setter(){
+  @include padding(100px null);
+}
 @mixin fontsize($size) {
   $base-font-size: 16px !default;
   @if (unitless($size)){
     $size: $size * 1px;
   }
   font-size: $size;
-  font-size: ($size / $base-font-size) * 1rem;
+  font-size: ($size / $base-font-size) * 1em;
 }
 
 @mixin css-annimation($animation,$time){

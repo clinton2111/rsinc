@@ -1,4 +1,3 @@
-/* FONT SIZE */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700");
 /* line 3, ../sass/modules/_fonts.scss */
 body {
@@ -19,8 +18,22 @@ h1, h2, h3, h4, h5 {
 /* line 13, ../sass/modules/_fonts.scss */
 .heading {
   font-size: 56px;
-  font-size: 3.5rem;
+  font-size: 3.5em;
   font-family: "Bebas Neue", sans-serif;
+  text-transform: capitalize;
+}
+
+/* line 18, ../sass/modules/_fonts.scss */
+.subtext {
+  font-size: 16px;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+/* line 23, ../sass/modules/_fonts.scss */
+.font-color-invert {
+  color: white;
 }
 
 /* line 1, ../sass/modules/_layout.scss */
@@ -50,7 +63,7 @@ header .navbar-default .navbar-nav li a {
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   font-size: 14px;
-  font-size: 0.875rem;
+  font-size: 0.875em;
 }
 /* line 19, ../sass/modules/_navbar.scss */
 header .navbar-default .navbar-nav li a:hover, header .navbar-default .navbar-nav li a:focus {
@@ -108,7 +121,7 @@ main #landing .landing-text {
 /* line 12, ../sass/modules/_landing.scss */
 main #landing .landing-text h1 {
   font-size: 128px;
-  font-size: 8rem;
+  font-size: 8em;
   font-family: 'Bebas Neue', sans-serif;
   text-transform: uppercase;
   color: white;
@@ -141,4 +154,163 @@ main #landing .move-to-bottom .fa {
   border-width: 1px;
   border-style: solid;
   padding: 10px;
+}
+
+/* line 1, ../sass/modules/_about.scss */
+#about {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+/* line 4, ../sass/modules/_about.scss */
+#about .container hr {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border-color: #c59a6d;
+  width: 30%;
+}
+/* line 9, ../sass/modules/_about.scss */
+#about .container .team-section {
+  padding-top: 50px;
+}
+/* line 11, ../sass/modules/_about.scss */
+#about .container .team-section .team-member {
+  display: inline-block;
+}
+/* line 13, ../sass/modules/_about.scss */
+#about .container .team-section .team-member .text-section {
+  padding-top: 30px;
+}
+/* line 16, ../sass/modules/_about.scss */
+#about .container .team-section .team-member .text-section .name-designation span {
+  font-size: 16px;
+  font-size: 1em;
+}
+/* line 19, ../sass/modules/_about.scss */
+#about .container .team-section .team-member .text-section .name-designation span:first-of-type {
+  color: #c59a6d;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* line 24, ../sass/modules/_about.scss */
+#about .container .team-section .team-member .text-section .name-designation span:last-of-type {
+  text-transform: uppercase;
+}
+/* line 26, ../sass/modules/_about.scss */
+#about .container .team-section .team-member .text-section .name-designation span:last-of-type:before {
+  content: '/';
+  padding-left: 10px;
+  padding-right: 2px;
+}
+/* line 35, ../sass/modules/_about.scss */
+#about .container .team-section .team-member .text-section .social-media a i {
+  color: #777777;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+/* line 39, ../sass/modules/_about.scss */
+#about .container .team-section .team-member .text-section .social-media a i:first-of-type {
+  padding-left: 0px;
+}
+/* line 43, ../sass/modules/_about.scss */
+#about .container .team-section .team-member .text-section .social-media a:hover i, #about .container .team-section .team-member .text-section .social-media a:focus i {
+  color: #c59a6d;
+}
+
+/* line 1, ../sass/modules/_work.scss */
+#work {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #2c2b2a;
+}
+/* line 5, ../sass/modules/_work.scss */
+#work .container .bx-wrapper {
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+/* line 10, ../sass/modules/_work.scss */
+#work .container .bx-wrapper .bx-pager.bx-default-pager a {
+  background: transparent;
+  border-color: white;
+  border-style: solid;
+  border-width: 0.5px;
+}
+/* line 16, ../sass/modules/_work.scss */
+#work .container .bx-wrapper .bx-pager.bx-default-pager a:hover, #work .container .bx-wrapper .bx-pager.bx-default-pager a.active, #work .container .bx-wrapper .bx-pager.bx-default-pager a:focus {
+  background: #c59a6d;
+  border: none;
+}
+/* line 20, ../sass/modules/_work.scss */
+#work .container .slider1 {
+  padding-top: 75px;
+}
+/* line 23, ../sass/modules/_work.scss */
+#work .container .outside {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+}
+/* line 26, ../sass/modules/_work.scss */
+#work .container .outside .fa {
+  color: #c59a6d;
+  border: white;
+  border-width: 1px;
+  border-style: solid;
+  padding: 10px;
+}
+/* line 33, ../sass/modules/_work.scss */
+#work .container .outside .fa:first-of-type {
+  margin-right: 10px;
+}
+/* line 36, ../sass/modules/_work.scss */
+#work .container .outside .fa:last-of-type {
+  margin-left: 10px;
+}
+/* line 40, ../sass/modules/_work.scss */
+#work .container .slide {
+  max-width: 350px;
+  width: 100%;
+  height: 500px;
+}
+@media (max-width: 768px) {
+  /* line 40, ../sass/modules/_work.scss */
+  #work .container .slide {
+    max-width: 100%;
+  }
+}
+/* line 47, ../sass/modules/_work.scss */
+#work .container .slide .text-con {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+/* line 49, ../sass/modules/_work.scss */
+#work .container .slide .text-con p:first-of-type {
+  color: #c59a6d;
+  font-weight: bold;
+  font-size: 18px;
+  font-size: 1.125em;
+  text-transform: uppercase;
+}
+/* line 55, ../sass/modules/_work.scss */
+#work .container .slide .text-con p:last-of-type {
+  color: white;
+  text-transform: capitalize;
+}
+/* line 59, ../sass/modules/_work.scss */
+#work .container .slide .text-con hr {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }

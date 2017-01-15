@@ -13,4 +13,13 @@ h1, h2, h3, h4, h5 {
 .heading{
   @include fontsize(56px);
   font-family: 'Bebas Neue', sans-serif ;
+  text-transform: capitalize;
+}
+.subtext{
+  @include fontsize(16px);
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.font-color-invert{
+  color: white;
 }
