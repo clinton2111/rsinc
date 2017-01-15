@@ -1,0 +1,86 @@
+#testimonials {
+  @include padding-setter();
+  .container {
+    .bx-wrapper {
+      background: none;
+      border: none;
+      box-shadow: none;
+    }
+    .bx-viewport {
+      height: auto !important;
+    }
+    .slider2 {
+      padding-top: 75px;
+      .slide {
+        img {
+          margin: 0 auto;
+        }
+        .text {
+          padding-top: 30px;
+          @include fontsize(16px);
+          font-style: italic;
+        }
+        .speaker {
+          .speaker-name {
+            @include fontsize(14px);
+            font-weight: bold;
+            text-transform: uppercase;
+
+            &:before {
+              content: '-';
+              padding-right: 5px;
+            }
+          }
+          .speaker-designation {
+            @include fontsize(12px);
+            color: #777777;
+            &:before {
+              content: '/';
+              padding-left: 15px;
+              padding-right: 5px;
+            }
+          }
+        }
+      }
+    }
+    .outside {
+      @include display(flex);
+      @include justify-content(center);
+      .fa {
+        color: $gold;
+        border: black;
+        border-width: 1px;
+        border-style: solid;
+        @include padding(10px);
+      }
+      .fa:first-of-type {
+        margin-right: 10px;
+      }
+      .fa:last-of-type {
+        margin-left: 10px;
+      }
+    }
+    .bx-wrapper .bx-pager.bx-default-pager a {
+      background: transparent;
+      border-color: black;
+      border-style: solid;
+      border-width: 0.5px;
+    }
+    .bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {
+      background: $gold;
+      border: none;
+    }
+    hr {
+      @include margin(100px null);
+      border-color: $gold;
+      width: 30%
+    }
+    .clients{
+      padding-top: 75px;
+      .client{
+        @include display(inline-block);
+      }
+    }
+
+  }
+}

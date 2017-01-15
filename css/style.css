@@ -515,3 +515,120 @@ main #landing .move-to-bottom .fa {
     font-size: 1.875em;
   }
 }
+
+/* line 1, ../sass/modules/_testimonials.scss */
+#testimonials {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+/* line 4, ../sass/modules/_testimonials.scss */
+#testimonials .container .bx-wrapper {
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+/* line 9, ../sass/modules/_testimonials.scss */
+#testimonials .container .bx-viewport {
+  height: auto !important;
+}
+/* line 12, ../sass/modules/_testimonials.scss */
+#testimonials .container .slider2 {
+  padding-top: 75px;
+}
+/* line 15, ../sass/modules/_testimonials.scss */
+#testimonials .container .slider2 .slide img {
+  margin: 0 auto;
+}
+/* line 18, ../sass/modules/_testimonials.scss */
+#testimonials .container .slider2 .slide .text {
+  padding-top: 30px;
+  font-size: 16px;
+  font-size: 1em;
+  font-style: italic;
+}
+/* line 24, ../sass/modules/_testimonials.scss */
+#testimonials .container .slider2 .slide .speaker .speaker-name {
+  font-size: 14px;
+  font-size: 0.875em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* line 29, ../sass/modules/_testimonials.scss */
+#testimonials .container .slider2 .slide .speaker .speaker-name:before {
+  content: '-';
+  padding-right: 5px;
+}
+/* line 34, ../sass/modules/_testimonials.scss */
+#testimonials .container .slider2 .slide .speaker .speaker-designation {
+  font-size: 12px;
+  font-size: 0.75em;
+  color: #777777;
+}
+/* line 37, ../sass/modules/_testimonials.scss */
+#testimonials .container .slider2 .slide .speaker .speaker-designation:before {
+  content: '/';
+  padding-left: 15px;
+  padding-right: 5px;
+}
+/* line 46, ../sass/modules/_testimonials.scss */
+#testimonials .container .outside {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+}
+/* line 49, ../sass/modules/_testimonials.scss */
+#testimonials .container .outside .fa {
+  color: #c59a6d;
+  border: black;
+  border-width: 1px;
+  border-style: solid;
+  padding: 10px;
+}
+/* line 56, ../sass/modules/_testimonials.scss */
+#testimonials .container .outside .fa:first-of-type {
+  margin-right: 10px;
+}
+/* line 59, ../sass/modules/_testimonials.scss */
+#testimonials .container .outside .fa:last-of-type {
+  margin-left: 10px;
+}
+/* line 63, ../sass/modules/_testimonials.scss */
+#testimonials .container .bx-wrapper .bx-pager.bx-default-pager a {
+  background: transparent;
+  border-color: black;
+  border-style: solid;
+  border-width: 0.5px;
+}
+/* line 69, ../sass/modules/_testimonials.scss */
+#testimonials .container .bx-wrapper .bx-pager.bx-default-pager a:hover, #testimonials .container .bx-wrapper .bx-pager.bx-default-pager a.active, #testimonials .container .bx-wrapper .bx-pager.bx-default-pager a:focus {
+  background: #c59a6d;
+  border: none;
+}
+/* line 73, ../sass/modules/_testimonials.scss */
+#testimonials .container hr {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border-color: #c59a6d;
+  width: 30%;
+}
+/* line 78, ../sass/modules/_testimonials.scss */
+#testimonials .container .clients {
+  padding-top: 75px;
+}
+/* line 80, ../sass/modules/_testimonials.scss */
+#testimonials .container .clients .client {
+  display: inline-block;
+}
