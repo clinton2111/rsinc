@@ -1,0 +1,15 @@
+{
+  "name": "jquery-timelineMe",
+  "homepage": "https://github.com/mickaelr/jquery-timelineMe",
+  "version": "0.1.8",
+  "_release": "0.1.8",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.1.8",
+    "commit": "9f73477c3d5527c8ed72586bb77808c90396239e"
+  },
+  "_source": "https://github.com/mickaelr/jquery-timelineMe.git",
+  "_target": "^0.1.8",
+  "_originalSource": "https://github.com/mickaelr/jquery-timelineMe.git",
+  "_direct": true
+}
